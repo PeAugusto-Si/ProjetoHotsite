@@ -1,0 +1,4 @@
+2023-11-06T21:44:10.2325480-03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2023-11-06T21:44:10.2364780-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-11-06T21:44:10.2366146-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-11-06T21:44:10.2366639-03:00  [INF] Content root path: "C:\Users\Valpe\OneDrive\Área de Trabalho\projetohotsite" (b5d60022)

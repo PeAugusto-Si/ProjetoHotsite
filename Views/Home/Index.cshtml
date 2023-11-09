@@ -1,0 +1,121 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+
+<div class="row">
+<div class="col-6">
+    <h1>Iniciativa Saúde da Cidade</h1>
+    <p>
+        Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+    </p>
+    <p>
+        Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+    </p>
+</div>
+
+<div class="col-6 mb-3">
+    <img src="https://blog.samisaude.com.br/wp-content/uploads/2020/07/cuide_saude_mental.jpg" style="width:120%"
+</div>
+</div>
+
+<div class="row">
+<div class="col-6 border border-dark">
+    <h2>Entre em contato!:</h2>
+    <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+    <form id="formCadastro" method="POST">
+        <div>
+            <label asp-for="Nome">Nome:</label>
+            <input asp-for="Nome" id="idNome"/>
+        </div>
+        <div>
+            <label asp-for="Email">Email:</label>
+            <input id="idEmail"/>
+        </div>
+        <div>
+            <label asp-for="Mensagem">Mensagem (opcional):</label>
+            <textarea asp-for="Mensagem" id="idMensagem"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" id="idBotao"/>
+        </div>
+    </form>
+</div>
+
+<figure class="col-2">
+  <img src="https://blog.samisaude.com.br/wp-content/uploads/2020/07/cuide_saude_mental.jpg" alt="Trulli" style="width:110%">
+  <figcaption><a href="#" data-toggle="modal" data-target="#IdAgenda">Agenda de eventos</a></figcaption>
+</figure>
+
+<figure class="col-2">
+  <img src="https://blog.samisaude.com.br/wp-content/uploads/2020/07/cuide_saude_mental.jpg" alt="Trulli" style="width:110%">
+  <figcaption><a href="#" data-toggle="modal" data-target="#IdSaudavel">Dicas de vida saudável</a></figcaption>
+</figure>
+
+<figure class="col-2">
+  <img src="https://blog.samisaude.com.br/wp-content/uploads/2020/07/cuide_saude_mental.jpg" alt="Trulli" style="width:110%">
+  <figcaption><a href="#" data-toggle="modal" data-target="#IdApoiadores">Apoiadores</a></figcaption>
+</figure>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal Agenda-->
+<div class="modal fade" id="IdAgenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agenda de eventos</h5>
+      </div>
+      <div class="modal-body">
+        <h2>Agenda</h2>
+        <h3>10/10/10 10:10 - Evento 1</h3>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae</p>
+        <h3>10/10/10 10:10 - Evento 1</h3>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae</p>
+        <h3>10/10/10 10:10 - Evento 1</h3>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Saudavel-->
+<div class="modal fade" id="IdSaudavel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dicas de vida saudável</h5>
+      </div>
+      <div class="modal-body">
+        <h2>Dicas de vida saudável</h2>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos</p>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos</p>
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Apoiadores-->
+<div class="modal fade" id="IdApoiadores" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Apoiadores</h5>
+      </div>
+      <div class="modal-body">
+        <h2>Apoiadores</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/6851/6851382.png" style="width:25%"> <P>Apoiador</P>
+        <h2>Apoiadores</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/6851/6851382.png" style="width:25%"> <P>Apoiador</P>
+        <h2>Apoiadores</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/6851/6851382.png" style="width:25%"> <P>Apoiador</P>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
